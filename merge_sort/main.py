@@ -34,14 +34,14 @@ def merge(left, right):
             arr.append(right[ind_r])
             ind_r += 1
 
-    while ind_l < len(left):
+    while ind_l < len(left):    #поки значення лівої сторони меньше довжини лівої сторони списку
         arr.append(left[ind_l])
         ind_l += 1
 
-    while ind_l < len(right):
+    while ind_r < len(right):   #поки значення правої сторони меньше довжини правої сторони списку
         arr.append(right[ind_r])
         ind_r += 1
 
     return arr      #повертаємо результат сортування
 
-    print(merge_sort([8, 6, 3, 4, 1, 0, 5, 7]))
+print(merge_sort([8, 6, 3, 4, 1, 0, 5, 7]))
