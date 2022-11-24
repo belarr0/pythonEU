@@ -1,5 +1,7 @@
 import random
 
+x = int(input("Enter num: "))
+
 def bubble_sort(nums):
     swapped = True
     while swapped:
@@ -29,11 +31,11 @@ def binary_search(num_list, x):
 
 	return -1
 
-x = 85
+#x = 85
 
 result = binary_search(num_list, x)
 
 if result != -1:
-	print("Element is present at index", str(result))
+	print("Element  at index", str(result))
 else:
-	print("Element is not present in array")
+	print("Element is not in array")
